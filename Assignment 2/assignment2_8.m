@@ -21,13 +21,12 @@ end
 
 figure(1)
 plot(t, x1, 'r');
+title('Computational Analysis of Position vs Time');
 xlabel('Time');
 ylabel('Position');
-legend();
-
 
 figure(2)
 plot(t, v1);
+title('Computational Analysis of Velocity vs Time');
 xlabel('Time');
 ylabel('Velocity');
-legend();

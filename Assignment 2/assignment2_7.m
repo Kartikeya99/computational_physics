@@ -3,7 +3,7 @@ clear all;
 g = 9.8;
 rho_air = 1.225;
 T = 10;
-density1= 0.5;g = 9.8;
+g = 9.8;
 rho_air = 1.225;
 T = 10;
 density1= 0.5;
@@ -81,13 +81,14 @@ for i=1:npoints-1
 end
 figure(1)
 plot(t, x1, 'r', t, x2, 'g', t, x3, 'b', t, x4, 'y');
+title('Computational Analysis of Position vs Time');
 xlabel('Time');
 ylabel('Position');
-legend();
-
+legend('Density1', 'Density2','Density3','Density4');
 
 figure(2)
 plot(t, v1, 'r', t, v2, 'g', t, v3, 'b', t, v4, 'y');
+title('Computational Analysis of Velocity vs Time');
 xlabel('Time');
 ylabel('Velocity');
-legend();
+legend('Density1', 'Density2','Density3','Density4');
